@@ -1,0 +1,952 @@
+{
+  "overview": {
+    "total_customers": 8000,
+    "converted": 7012,
+    "not_converted": 988,
+    "conversion_rate": 0.8765,
+    "avg_ad_spend": 5000.944830424953,
+    "avg_income": 84664.19675
+  },
+  "channels": [
+    {
+      "name": "Email",
+      "records": 1557,
+      "conversion_rate": 0.8702633269107257,
+      "avg_ad_spend": 5055.6042722409165,
+      "avg_ctr": 0.15560905231967878
+    },
+    {
+      "name": "PPC",
+      "records": 1655,
+      "conversion_rate": 0.8827794561933535,
+      "avg_ad_spend": 4954.221740859523,
+      "avg_ctr": 0.15830726306304427
+    },
+    {
+      "name": "Referral",
+      "records": 1719,
+      "conversion_rate": 0.8830715532286213,
+      "avg_ad_spend": 5034.042283648513,
+      "avg_ctr": 0.1516725644974556
+    },
+    {
+      "name": "SEO",
+      "records": 1550,
+      "conversion_rate": 0.8767741935483871,
+      "avg_ad_spend": 4994.131532678792,
+      "avg_ctr": 0.15315048222928557
+    },
+    {
+      "name": "Social Media",
+      "records": 1519,
+      "conversion_rate": 0.8683344305464121,
+      "avg_ad_spend": 4965.321428014535,
+      "avg_ctr": 0.15552270740622334
+    }
+  ],
+  "campaigns": [
+    {
+      "name": "Awareness",
+      "records": 1988,
+      "conversion_rate": 0.8556338028169014,
+      "avg_ad_spend": 5069.338946900103,
+      "avg_ctr": 0.15576413973963363
+    },
+    {
+      "name": "Consideration",
+      "records": 1988,
+      "conversion_rate": 0.8556338028169014,
+      "avg_ad_spend": 4960.39923269519,
+      "avg_ctr": 0.15179778492422355
+    },
+    {
+      "name": "Conversion",
+      "records": 2077,
+      "conversion_rate": 0.9335580163697641,
+      "avg_ad_spend": 4959.112653482242,
+      "avg_ctr": 0.1556650848936358
+    },
+    {
+      "name": "Retention",
+      "records": 1947,
+      "conversion_rate": 0.8582434514637904,
+      "avg_ad_spend": 5017.135162342866,
+      "avg_ctr": 0.15607586320072958
+    }
+  ],
+  "correlation": {
+    "features": [
+      "AdSpend",
+      "ClickThroughRate",
+      "WebsiteVisits",
+      "PagesPerVisit",
+      "TimeOnSite",
+      "SocialShares",
+      "EmailOpens",
+      "EmailClicks",
+      "PreviousPurchases",
+      "LoyaltyPoints",
+      "Conversion"
+    ],
+    "matrix": [
+      [
+        1.0,
+        -0.01,
+        0.01,
+        -0.01,
+        -0.0,
+        -0.02,
+        0.02,
+        0.0,
+        0.0,
+        0.0,
+        0.12
+      ],
+      [
+        -0.01,
+        1.0,
+        -0.02,
+        0.0,
+        -0.01,
+        -0.01,
+        -0.01,
+        -0.01,
+        -0.0,
+        -0.02,
+        0.12
+      ],
+      [
+        0.01,
+        -0.02,
+        1.0,
+        -0.01,
+        -0.02,
+        0.0,
+        0.01,
+        0.0,
+        0.01,
+        0.0,
+        0.08
+      ],
+      [
+        -0.01,
+        0.0,
+        -0.01,
+        1.0,
+        0.02,
+        0.01,
+        0.0,
+        -0.0,
+        -0.02,
+        -0.01,
+        0.1
+      ],
+      [
+        -0.0,
+        -0.01,
+        -0.02,
+        0.02,
+        1.0,
+        0.0,
+        -0.0,
+        0.0,
+        -0.01,
+        -0.01,
+        0.13
+      ],
+      [
+        -0.02,
+        -0.01,
+        0.0,
+        0.01,
+        0.0,
+        1.0,
+        -0.01,
+        0.0,
+        -0.01,
+        -0.0,
+        -0.01
+      ],
+      [
+        0.02,
+        -0.01,
+        0.01,
+        0.0,
+        -0.0,
+        -0.01,
+        1.0,
+        0.0,
+        0.0,
+        -0.0,
+        0.12
+      ],
+      [
+        0.0,
+        -0.01,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -0.0,
+        0.13
+      ],
+      [
+        0.0,
+        -0.0,
+        0.01,
+        -0.02,
+        -0.01,
+        -0.01,
+        0.0,
+        0.0,
+        1.0,
+        0.01,
+        0.11
+      ],
+      [
+        0.0,
+        -0.02,
+        0.0,
+        -0.01,
+        -0.01,
+        -0.0,
+        -0.0,
+        -0.0,
+        0.01,
+        1.0,
+        0.1
+      ],
+      [
+        0.12,
+        0.12,
+        0.08,
+        0.1,
+        0.13,
+        -0.01,
+        0.12,
+        0.13,
+        0.11,
+        0.1,
+        1.0
+      ]
+    ],
+    "pairs": [
+      {
+        "x": "AdSpend",
+        "y": "AdSpend",
+        "value": 1.0
+      },
+      {
+        "x": "AdSpend",
+        "y": "ClickThroughRate",
+        "value": -0.01
+      },
+      {
+        "x": "AdSpend",
+        "y": "WebsiteVisits",
+        "value": 0.01
+      },
+      {
+        "x": "AdSpend",
+        "y": "PagesPerVisit",
+        "value": -0.01
+      },
+      {
+        "x": "AdSpend",
+        "y": "TimeOnSite",
+        "value": -0.0
+      },
+      {
+        "x": "AdSpend",
+        "y": "SocialShares",
+        "value": -0.02
+      },
+      {
+        "x": "AdSpend",
+        "y": "EmailOpens",
+        "value": 0.02
+      },
+      {
+        "x": "AdSpend",
+        "y": "EmailClicks",
+        "value": 0.0
+      },
+      {
+        "x": "AdSpend",
+        "y": "PreviousPurchases",
+        "value": 0.0
+      },
+      {
+        "x": "AdSpend",
+        "y": "LoyaltyPoints",
+        "value": 0.0
+      },
+      {
+        "x": "AdSpend",
+        "y": "Conversion",
+        "value": 0.12
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "AdSpend",
+        "value": -0.01
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "ClickThroughRate",
+        "value": 1.0
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "WebsiteVisits",
+        "value": -0.02
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "PagesPerVisit",
+        "value": 0.0
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "TimeOnSite",
+        "value": -0.01
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "SocialShares",
+        "value": -0.01
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "EmailOpens",
+        "value": -0.01
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "EmailClicks",
+        "value": -0.01
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "PreviousPurchases",
+        "value": -0.0
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "LoyaltyPoints",
+        "value": -0.02
+      },
+      {
+        "x": "ClickThroughRate",
+        "y": "Conversion",
+        "value": 0.12
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "AdSpend",
+        "value": 0.01
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "ClickThroughRate",
+        "value": -0.02
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "WebsiteVisits",
+        "value": 1.0
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "PagesPerVisit",
+        "value": -0.01
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "TimeOnSite",
+        "value": -0.02
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "SocialShares",
+        "value": 0.0
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "EmailOpens",
+        "value": 0.01
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "EmailClicks",
+        "value": 0.0
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "PreviousPurchases",
+        "value": 0.01
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "LoyaltyPoints",
+        "value": 0.0
+      },
+      {
+        "x": "WebsiteVisits",
+        "y": "Conversion",
+        "value": 0.08
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "AdSpend",
+        "value": -0.01
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "ClickThroughRate",
+        "value": 0.0
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "WebsiteVisits",
+        "value": -0.01
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "PagesPerVisit",
+        "value": 1.0
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "TimeOnSite",
+        "value": 0.02
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "SocialShares",
+        "value": 0.01
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "EmailOpens",
+        "value": 0.0
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "EmailClicks",
+        "value": -0.0
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "PreviousPurchases",
+        "value": -0.02
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "LoyaltyPoints",
+        "value": -0.01
+      },
+      {
+        "x": "PagesPerVisit",
+        "y": "Conversion",
+        "value": 0.1
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "AdSpend",
+        "value": -0.0
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "ClickThroughRate",
+        "value": -0.01
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "WebsiteVisits",
+        "value": -0.02
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "PagesPerVisit",
+        "value": 0.02
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "TimeOnSite",
+        "value": 1.0
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "SocialShares",
+        "value": 0.0
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "EmailOpens",
+        "value": -0.0
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "EmailClicks",
+        "value": 0.0
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "PreviousPurchases",
+        "value": -0.01
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "LoyaltyPoints",
+        "value": -0.01
+      },
+      {
+        "x": "TimeOnSite",
+        "y": "Conversion",
+        "value": 0.13
+      },
+      {
+        "x": "SocialShares",
+        "y": "AdSpend",
+        "value": -0.02
+      },
+      {
+        "x": "SocialShares",
+        "y": "ClickThroughRate",
+        "value": -0.01
+      },
+      {
+        "x": "SocialShares",
+        "y": "WebsiteVisits",
+        "value": 0.0
+      },
+      {
+        "x": "SocialShares",
+        "y": "PagesPerVisit",
+        "value": 0.01
+      },
+      {
+        "x": "SocialShares",
+        "y": "TimeOnSite",
+        "value": 0.0
+      },
+      {
+        "x": "SocialShares",
+        "y": "SocialShares",
+        "value": 1.0
+      },
+      {
+        "x": "SocialShares",
+        "y": "EmailOpens",
+        "value": -0.01
+      },
+      {
+        "x": "SocialShares",
+        "y": "EmailClicks",
+        "value": 0.0
+      },
+      {
+        "x": "SocialShares",
+        "y": "PreviousPurchases",
+        "value": -0.01
+      },
+      {
+        "x": "SocialShares",
+        "y": "LoyaltyPoints",
+        "value": -0.0
+      },
+      {
+        "x": "SocialShares",
+        "y": "Conversion",
+        "value": -0.01
+      },
+      {
+        "x": "EmailOpens",
+        "y": "AdSpend",
+        "value": 0.02
+      },
+      {
+        "x": "EmailOpens",
+        "y": "ClickThroughRate",
+        "value": -0.01
+      },
+      {
+        "x": "EmailOpens",
+        "y": "WebsiteVisits",
+        "value": 0.01
+      },
+      {
+        "x": "EmailOpens",
+        "y": "PagesPerVisit",
+        "value": 0.0
+      },
+      {
+        "x": "EmailOpens",
+        "y": "TimeOnSite",
+        "value": -0.0
+      },
+      {
+        "x": "EmailOpens",
+        "y": "SocialShares",
+        "value": -0.01
+      },
+      {
+        "x": "EmailOpens",
+        "y": "EmailOpens",
+        "value": 1.0
+      },
+      {
+        "x": "EmailOpens",
+        "y": "EmailClicks",
+        "value": 0.0
+      },
+      {
+        "x": "EmailOpens",
+        "y": "PreviousPurchases",
+        "value": 0.0
+      },
+      {
+        "x": "EmailOpens",
+        "y": "LoyaltyPoints",
+        "value": -0.0
+      },
+      {
+        "x": "EmailOpens",
+        "y": "Conversion",
+        "value": 0.12
+      },
+      {
+        "x": "EmailClicks",
+        "y": "AdSpend",
+        "value": 0.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "ClickThroughRate",
+        "value": -0.01
+      },
+      {
+        "x": "EmailClicks",
+        "y": "WebsiteVisits",
+        "value": 0.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "PagesPerVisit",
+        "value": -0.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "TimeOnSite",
+        "value": 0.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "SocialShares",
+        "value": 0.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "EmailOpens",
+        "value": 0.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "EmailClicks",
+        "value": 1.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "PreviousPurchases",
+        "value": 0.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "LoyaltyPoints",
+        "value": -0.0
+      },
+      {
+        "x": "EmailClicks",
+        "y": "Conversion",
+        "value": 0.13
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "AdSpend",
+        "value": 0.0
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "ClickThroughRate",
+        "value": -0.0
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "WebsiteVisits",
+        "value": 0.01
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "PagesPerVisit",
+        "value": -0.02
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "TimeOnSite",
+        "value": -0.01
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "SocialShares",
+        "value": -0.01
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "EmailOpens",
+        "value": 0.0
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "EmailClicks",
+        "value": 0.0
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "PreviousPurchases",
+        "value": 1.0
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "LoyaltyPoints",
+        "value": 0.01
+      },
+      {
+        "x": "PreviousPurchases",
+        "y": "Conversion",
+        "value": 0.11
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "AdSpend",
+        "value": 0.0
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "ClickThroughRate",
+        "value": -0.02
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "WebsiteVisits",
+        "value": 0.0
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "PagesPerVisit",
+        "value": -0.01
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "TimeOnSite",
+        "value": -0.01
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "SocialShares",
+        "value": -0.0
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "EmailOpens",
+        "value": -0.0
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "EmailClicks",
+        "value": -0.0
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "PreviousPurchases",
+        "value": 0.01
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "LoyaltyPoints",
+        "value": 1.0
+      },
+      {
+        "x": "LoyaltyPoints",
+        "y": "Conversion",
+        "value": 0.1
+      },
+      {
+        "x": "Conversion",
+        "y": "AdSpend",
+        "value": 0.12
+      },
+      {
+        "x": "Conversion",
+        "y": "ClickThroughRate",
+        "value": 0.12
+      },
+      {
+        "x": "Conversion",
+        "y": "WebsiteVisits",
+        "value": 0.08
+      },
+      {
+        "x": "Conversion",
+        "y": "PagesPerVisit",
+        "value": 0.1
+      },
+      {
+        "x": "Conversion",
+        "y": "TimeOnSite",
+        "value": 0.13
+      },
+      {
+        "x": "Conversion",
+        "y": "SocialShares",
+        "value": -0.01
+      },
+      {
+        "x": "Conversion",
+        "y": "EmailOpens",
+        "value": 0.12
+      },
+      {
+        "x": "Conversion",
+        "y": "EmailClicks",
+        "value": 0.13
+      },
+      {
+        "x": "Conversion",
+        "y": "PreviousPurchases",
+        "value": 0.11
+      },
+      {
+        "x": "Conversion",
+        "y": "LoyaltyPoints",
+        "value": 0.1
+      },
+      {
+        "x": "Conversion",
+        "y": "Conversion",
+        "value": 1.0
+      }
+    ]
+  },
+  "gender_distribution": [
+    {
+      "gender": "Female",
+      "total": 4839,
+      "percentage": 60.5,
+      "converted": 4240,
+      "not_converted": 599,
+      "conversion_rate": 0.8762,
+      "avg_income": 85922.6,
+      "avg_ad_spend": 5005.08,
+      "avg_ctr": 0.1549
+    },
+    {
+      "gender": "Male",
+      "total": 3161,
+      "percentage": 39.5,
+      "converted": 2772,
+      "not_converted": 389,
+      "conversion_rate": 0.8769,
+      "avg_income": 82737.77,
+      "avg_ad_spend": 4994.61,
+      "avg_ctr": 0.1548
+    }
+  ],
+  "ad_spend_by_conversion": {
+    "0": {
+      "label": "Not Converted (0)",
+      "count": 988,
+      "mean": 4058.4,
+      "std": 2684.28,
+      "min": 100.05,
+      "q1": 1881.51,
+      "median": 3554.55,
+      "q3": 6103.98,
+      "max": 9977.67
+    },
+    "1": {
+      "label": "Converted (1)",
+      "count": 7012,
+      "mean": 5133.75,
+      "std": 2834.13,
+      "min": 103.41,
+      "q1": 2682.53,
+      "median": 5249.72,
+      "q3": 7555.08,
+      "max": 9997.91
+    }
+  },
+  "spend_tier_stats": [
+    {
+      "tier": "Low (<$2.5k)",
+      "records": 1988,
+      "converted": 1646,
+      "conversion_rate": 0.828,
+      "avg_ad_spend": 1325.23
+    },
+    {
+      "tier": "Medium ($2.5k-$5k)",
+      "records": 2001,
+      "converted": 1664,
+      "conversion_rate": 0.8316,
+      "avg_ad_spend": 3730.85
+    },
+    {
+      "tier": "High ($5k-$7.5k)",
+      "records": 2072,
+      "converted": 1910,
+      "conversion_rate": 0.9218,
+      "avg_ad_spend": 6255.49
+    },
+    {
+      "tier": "Premium (>$7.5k)",
+      "records": 1939,
+      "converted": 1792,
+      "conversion_rate": 0.9242,
+      "avg_ad_spend": 8739.65
+    }
+  ],
+  "age_group_stats": [
+    {
+      "group": "18-25",
+      "records": 1193,
+      "percentage": 14.9,
+      "converted": 1032,
+      "conversion_rate": 0.865
+    },
+    {
+      "group": "26-35",
+      "records": 1522,
+      "percentage": 19.0,
+      "converted": 1326,
+      "conversion_rate": 0.8712
+    },
+    {
+      "group": "36-50",
+      "records": 2360,
+      "percentage": 29.5,
+      "converted": 2093,
+      "conversion_rate": 0.8869
+    },
+    {
+      "group": "50+",
+      "records": 2925,
+      "percentage": 36.6,
+      "converted": 2561,
+      "conversion_rate": 0.8756
+    }
+  ]
+}

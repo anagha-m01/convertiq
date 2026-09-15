@@ -1,0 +1,55 @@
+{
+  "selected_model": "AdaBoostClassifier",
+  "selection_reason": "Best macro F1 among compared baseline models in leakage-free evaluation",
+  "accuracy": 0.885625,
+  "balanced_accuracy": 0.7222114151500743,
+  "macro_f1": 0.7286152425918357,
+  "roc_auc": 0.7941144685081917,
+  "pr_auc": 0.9470856784039897,
+  "class_0": {
+    "precision": 0.5405405405405406,
+    "recall": 0.5050505050505051,
+    "f1": 0.5221932114882507,
+    "support": 198
+  },
+  "class_1": {
+    "precision": 0.9307420494699646,
+    "recall": 0.9393723252496433,
+    "f1": 0.9350372736954207,
+    "support": 1402
+  },
+  "confusion_matrix": [
+    [
+      100,
+      98
+    ],
+    [
+      85,
+      1317
+    ]
+  ],
+  "threshold": 0.5,
+  "train_size": 6400,
+  "test_size": 1600,
+  "features": [
+    "Age",
+    "Gender",
+    "Income",
+    "CampaignChannel",
+    "CampaignType",
+    "AdSpend",
+    "ClickThroughRate",
+    "WebsiteVisits",
+    "PagesPerVisit",
+    "TimeOnSite",
+    "SocialShares",
+    "EmailOpens",
+    "EmailClicks",
+    "PreviousPurchases",
+    "LoyaltyPoints"
+  ],
+  "class_distribution": {
+    "0": 988,
+    "1": 7012
+  }
+}
