@@ -2,11 +2,6 @@
 
 An end-to-end machine learning platform that predicts customer conversion propensity in digital marketing campaigns, benchmarks seven classification algorithms against each other, and surfaces the underlying exploratory data analysis in an interactive dashboard.
 
-**Live demo:** `<your-vercel-app>.vercel.app` *(not yet deployed — update once live)*
-**Backend API:** `<your-render-backend>.onrender.com` *(not yet deployed — update once live)*
-
----
-
 ## Overview
 
 Feed it a prospective customer's profile — demographics, ad spend, engagement metrics, purchase history — and it returns a real-time conversion prediction with a probability score. Behind that single endpoint sits a full data science workflow: a leakage-free preprocessing and resampling pipeline, a 7-model benchmark chosen on imbalance-aware metrics rather than raw accuracy, and a dashboard that exposes the exploratory analysis (correlations, demographics, ad spend tiers) that justified those modeling choices.
@@ -16,10 +11,10 @@ No login or session state — every request is stateless, so the model and analy
 ## Architecture
 
 ```
-┌─────────────┐        HTTPS (JSON)        ┌──────────────────┐
+┌─────────────┐         HTTP (JSON)        ┌──────────────────┐
 │   Frontend   │ ─────────────────────────► │     Backend      │
 │  React/Vite  │ ◄───────────────────────── │     FastAPI      │
-│   (Vercel)   │                            │     (Render)     │
+│ (Port 5173)  │                            │   (Port 8000)    │
 └─────────────┘                            └────────┬─────────┘
                                                       │
                               ┌───────────────────────┼───────────────────────┐
@@ -132,7 +127,7 @@ Run it:
 ```bash
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
-API is now live at `http://127.0.0.1:8000` — interactive docs at `http://127.0.0.1:8000/docs`.
+API is now live at `http://127.0.0.1:8000`.
 
 ### 3. Frontend setup
 ```bash
@@ -147,15 +142,15 @@ App is now live at `http://localhost:5173`.
 
 **Backend (`backend/.env`)**
 
-| Variable | Required | Default | Notes |
-|---|---|---|---|
-| `ALLOWED_ORIGINS` | production only | `http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000` | Comma-separated CORS allowlist; must include your deployed frontend URL |
+| Variable | Default | Description |
+|---|---|---|
+| `ALLOWED_ORIGINS` | `http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000` | Comma-separated CORS allowlist for allowed frontend origins |
 
 **Frontend (`frontend/.env`)**
 
-| Variable | Required | Notes |
+| Variable | Default | Description |
 |---|---|---|
-| `VITE_API_BASE_URL` | production only | Your deployed Render backend URL |
+| `VITE_API_BASE_URL` | `http://127.0.0.1:8000` | Base URL for the FastAPI backend API |
 
 ## API Reference
 
@@ -232,24 +227,8 @@ Models like Random Forest and Gradient Boosting scored high raw accuracy (89.6%�
 | Macro Average | 73.56% | 72.22% | 0.7286 | 1,600 |
 | Weighted Average | 88.25% | 88.56% | 0.8839 | 1,600 |
 
-## Deployment
+## Limitations
 
-This is a two-part deploy: the FastAPI backend and the Vite/React frontend go to separate hosts.
+- **Static model & analytics artifacts**: The dashboard metrics and trained model are precomputed artifacts. Updating them with new customer data or benchmarks requires re-running `train.py` and `compute_analytics.py` locally, as there is no automated database or retraining pipeline behind the API.
 
-**Backend (Render, free tier):**
-1. Push this repo to GitHub.
-2. On [Render](https://render.com), create a new **Web Service** pointing at this repo, root directory `backend`.
-3. Build command: `pip install -r requirements.txt`
-4. Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-5. Add environment variable `ALLOWED_ORIGINS=https://<your-vercel-app>.vercel.app` once the frontend is deployed.
-6. Deploy, then confirm `https://<your-render-backend>.onrender.com/api/health` returns `{"status": "ok", ...}`.
-
-**Frontend (Vercel, free tier):**
-1. Import this repo, root directory `frontend`.
-2. Framework preset: Vite.
-3. Add environment variable `VITE_API_BASE_URL` set to your deployed Render backend URL.
-4. Deploy.
-5. Go back to Render and confirm `ALLOWED_ORIGINS` matches your Vercel URL exactly (no trailing slash), then redeploy the backend — CORS will reject the frontend until this matches.
-
-> **Known limitation:** the dashboard and model artifacts are static — regenerating them (new training data, new benchmark) requires re-running `train.py` / `compute_analytics.py` locally and redeploying, since there's no retraining endpoint or database behind the API.
 
